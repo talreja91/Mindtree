@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src= "C:\Users\M1039488\Desktop\mindtree\LoginController.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="loginController">
+
+<form name="loginForm">
+<table border="solid" >
+<tr>
+	<td align="center">  Login
+	</td>
+</tr>
+<tr>
+	<td align="center">  Email: <input type="text" ng-init="id='Enter you id'" ng-model="id" ng-click="clearEmail()" >
+	</td>
+</tr>
+<tr> 
+	<td align="center"> Password: <input type="password" ng-model="pswd" ng-click="clearPassword()" ng-init="pswd='Enter your password'">
+	</td>
+</tr>
+<tr> 
+	<td align="center"><input type="submit" ng-click="submitForm()">
+	</td>
+</tr>
+</table>
+</form>
+
+<p ng-bind="id"></p>
+<p ng-bind="pswd"></p>
+</form>
+</div>
+
+</body>
+</html>
